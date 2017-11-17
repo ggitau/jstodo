@@ -1,0 +1,26 @@
+<div class="content">
+
+  <div class="todo-container">
+    <h1>{{appTitle}}</h1>
+    <div class="add-todo">
+      <input type="text" class="todo-input" id="todo-text" placeholder="Type todo here and hit enter"/>
+    </div>
+    <div class="todo-list">
+      {{# if todos}}
+      {{#todos}} {{>todo}} {{/todos}}
+      {{else}}
+      No todos so far.
+      {{/if}}
+    </div>
+    {{# if todos}}
+    <div class="todo-controls">
+      <div class="">
+        All <input type="checkbox" id="show-all" {{# if showingAll}}checked{{/if}}/>
+        Completed <input type="checkbox" id="show-completed" {{#if showingCompleted}}checked{{/if}}/>
+      </div>
+    </div>
+    {{/if}}
+
+  </div>
+
+</div>
