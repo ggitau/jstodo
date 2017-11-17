@@ -2,6 +2,7 @@
 ## Deploying
 ### Prerequisites
 * npm
+* apache/nginx
 ### Instructions
 * cd to project root
 * Run `npm install`
